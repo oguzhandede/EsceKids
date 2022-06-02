@@ -15,11 +15,9 @@ public class HomeActivity extends AppCompatActivity {
     ImageButton filterButton2;
     ImageButton favoriButton2;
     ImageButton shopButton2;
-    ImageButton urun1;
+
     ImageButton homeButton2;
-    ImageButton imageButton20;
-    ImageButton imageButton19;
-    ImageButton imageButton21;
+    ImageButton imageButton10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,12 +29,10 @@ public class HomeActivity extends AppCompatActivity {
         filterButton2=findViewById(R.id.filterButton2);
         favoriButton2=findViewById(R.id.favoriButton2);
         shopButton2=findViewById(R.id.shopButton2);
-        urun1=findViewById(R.id.urun1);
+
         homeButton2=findViewById(R.id.homeButton2);
         //marka logoları
-        imageButton20=findViewById(R.id.imageButton20);
-        imageButton19=findViewById(R.id.imageButton19);
-        imageButton21=findViewById(R.id.imageButton21);
+        imageButton10=findViewById(R.id.imageButton10);
         //marka logoları
 
         accountButton4.setOnClickListener(new View.OnClickListener() {
@@ -71,41 +67,21 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        urun1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent urun1=new Intent(HomeActivity.this,ProduceActivity.class);
-                startActivity(urun1);
-            }
-        });
+
         homeButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent homeButton2=new Intent(HomeActivity.this,HomeActivity.class);
+                Intent homeButton2=new Intent(HomeActivity.this,BrandaActivity.class);
                 startActivity(homeButton2);
             }
         });
-        imageButton20.setOnClickListener(new View.OnClickListener() {
+        imageButton10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent imageButton20=new Intent(HomeActivity.this,BrandaActivity.class);
-                startActivity(imageButton20);
+                Intent imageButton10=new Intent(HomeActivity.this,BrandaActivity.class);
             }
         });
-        imageButton19.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent imageButton19=new Intent(HomeActivity.this,BrandaActivity.class);
-                startActivity(imageButton19);
-            }
-        });
-        imageButton21.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent imageButton21=new Intent(HomeActivity.this,BrandaActivity.class);
-                startActivity(imageButton21);
-            }
-        });
+
 
     }
 

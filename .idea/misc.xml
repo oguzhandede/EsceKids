@@ -9,20 +9,20 @@
         <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1" />
         <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/activity_account.xml" value="0.33" />
-        <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/activity_account_info.xml" value="0.25" />
+        <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/activity_account_info.xml" value="0.33" />
         <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/activity_basket.xml" value="0.33" />
         <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/activity_bottom_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/activity_bottom_navi.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/activity_bottom_navibar.xml" value="0.28958333333333336" />
         <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/activity_branda.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/activity_communication.xml" value="0.25" />
+        <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/activity_communication.xml" value="0.33" />
         <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/activity_favorite.xml" value="0.33" />
         <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/activity_filter.xml" value="0.33" />
-        <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/activity_home.xml" value="0.33" />
         <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/activity_orders.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/activity_payment.xml" value="0.25" />
+        <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/activity_payment.xml" value="0.33" />
         <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/activity_produce.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/activity_product.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/activity_register.xml" value="0.36666666666666664" />
@@ -32,6 +32,7 @@
         <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/fragment_first.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/fragment_second.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/layout/urun_item.xml" value="0.33" />
         <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
         <entry key="..\:/Users/DEDE/AndroidStudioProjects/Escekids/app/src/main/res/menu/menu.xml" value="0.28958333333333336" />
       </map>

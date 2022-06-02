@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,11 +9,12 @@
     tools:context=".HomeActivity">
 
     <ScrollView
-        android:id="@+id/scrollView"
-        android:layout_width="403dp"
-        android:layout_height="498dp"
+        android:layout_width="409dp"
+        android:layout_height="491dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView17"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView15">
 
@@ -20,61 +23,70 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/imageButton22"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#00000000"
-                app:srcCompat="@drawable/slaytimg" />
+                android:layout_height="match_parent">
 
-            <ImageView
-                android:id="@+id/imageView21"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/line" />
+                <ImageView
+                    android:id="@+id/imageView54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/slaytimg" />
 
-            <ImageButton
-                android:id="@+id/imageButton20"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#00000000"
-                android:translationX="30dp"
-                app:srcCompat="@drawable/kotonimg" />
+                <ImageView
+                    android:id="@+id/imageView57"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toEndOf="@+id/imageButton10"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView54"
+                    app:srcCompat="@drawable/zaraimg" />
 
-            <ImageButton
-                android:id="@+id/imageButton19"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#00000000"
-                android:translationX="150dp"
-                android:translationY="-117dp"
-                app:srcCompat="@drawable/zaraimg" />
+                <ImageView
+                    android:id="@+id/imageView56"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageView57"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView54"
+                    app:srcCompat="@drawable/lcwimg" />
 
-            <ImageButton
-                android:id="@+id/imageButton21"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#00000000"
-                android:translationX="270dp"
-                android:translationY="-234dp"
-                app:srcCompat="@drawable/lcwimg" />
+                <ImageView
+                    android:id="@+id/imageView58"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.363"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView57"
+                    app:srcCompat="@drawable/urunimg" />
 
-            <ImageButton
-                android:id="@+id/urun1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#00000000"
-                android:translationY="-220dp"
-                app:srcCompat="@drawable/urunimg" />
+                <ImageView
+                    android:id="@+id/imageView59"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView58"
+                    app:srcCompat="@drawable/urunimg" />
 
-            <ImageButton
-                android:id="@+id/imageButton10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#00000000"
-                android:translationX="300dp"
-                android:translationY="-315dp"
-                app:srcCompat="@drawable/blackshopbutton" />
+                <ImageButton
+                    android:id="@+id/imageButton10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#00000000"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView54"
+                    app:srcCompat="@drawable/kotonimg" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
     </ScrollView>
@@ -145,17 +157,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logotext" />
 
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#00000000"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/line" />
-
     <ImageButton
         android:id="@+id/accountButton4"
         android:layout_width="55dp"
@@ -166,5 +167,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/btnperson" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+        app:srcCompat="@drawable/line"
+        tools:layout_editor_absoluteX="13dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

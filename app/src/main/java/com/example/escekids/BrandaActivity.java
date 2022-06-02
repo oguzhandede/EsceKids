@@ -1,11 +1,18 @@
 package com.example.escekids;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.URLUtil;
 import android.widget.ImageButton;
+import android.widget.Toast;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 public class BrandaActivity extends AppCompatActivity {
     ImageButton homeButton3;
@@ -60,5 +67,21 @@ public class BrandaActivity extends AppCompatActivity {
             }
         });
 
-    }
-}
+        ArrayList<productinfo> products=new ArrayList<productinfo>();
+
+        products.add(new productinfo("urun1",R.drawable.urun1 ,250));
+        products.add(new productinfo("urun2",R.drawable.urun2 ,350));
+        products.add(new productinfo("urun3",R.drawable.urun3 ,150));
+        products.add(new productinfo("urun4",R.drawable.urun4 ,150));
+        RecyclerView list1=findViewById(R.id.list1);
+        productAdaptor adaptor=new productAdaptor(products,this);
+        list1.setAdapter(adaptor);
+        list1.setLayoutManager(new LinearLayoutManager(this));
+        adaptor.setOnClickListiner(new productAdaptor.MyOnClickListener() {
+            @Override
+            public void MyOnClick(productinfo productinfo, int position, ArrayList<productinfo> sepet) {
+                Toast.makeText(BrandaActivity.this,"Sepete Eklendi:"+sepet.size(),Toast.LENGTH_SHORT).show();
+            }
+        });
+
+    }}
