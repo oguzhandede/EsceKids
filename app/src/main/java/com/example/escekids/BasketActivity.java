@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class BasketActivity extends AppCompatActivity {
 
@@ -14,9 +15,12 @@ public class BasketActivity extends AppCompatActivity {
     ImageButton favoriButton4;
     ImageButton shopButton4;
     ImageButton accountButton7;
-    ImageButton imageButton2;
-    ImageButton paybtn;
 
+    ImageButton paybtn;
+TextView textView7;
+    TextView textView8;
+    TextView textView9;
+    TextView toplamtutar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,11 +28,26 @@ public class BasketActivity extends AppCompatActivity {
 
 
         homeButton4=findViewById(R.id.homeButton4);
-        filterButton4=findViewById(R.id.filterButton4);
-        favoriButton4=findViewById(R.id.favoriButton4);
+
         shopButton4=findViewById(R.id.shopButton4);
-        accountButton7=findViewById(R.id.accountButton7);
+
         paybtn=findViewById(R.id.paybtn);
+
+        textView7=findViewById(R.id.textView7);
+        textView8=findViewById(R.id.textView8);
+        textView9=findViewById(R.id.textView9);
+        toplamtutar=findViewById(R.id.toplamtutar);
+
+        Intent verial=getIntent();
+        String alinanisim=verial.getStringExtra("ad1");
+        String alinanfiyat=verial.getStringExtra("fiyat1");
+
+        textView7.setText(alinanisim);
+        textView8.setText(alinanfiyat);
+        textView9.setText(alinanfiyat);
+
+
+
 
         homeButton4.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,20 +57,7 @@ public class BasketActivity extends AppCompatActivity {
             }
         });
 
-        filterButton4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent filterButton4=new Intent(BasketActivity.this,FilterActivity.class);
-                startActivity(filterButton4);
-            }
-        });
-        favoriButton4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent favoriButton4=new Intent(BasketActivity.this,FavoriteActivity.class);
-                startActivity(favoriButton4);
-            }
-        });
+
         shopButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,13 +65,7 @@ public class BasketActivity extends AppCompatActivity {
                 startActivity(shopButton4);
             }
         });
-        accountButton7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent accountButton7=new Intent(BasketActivity.this,LoginActivity.class);
-                startActivity(accountButton7);
-            }
-        });
+
         paybtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

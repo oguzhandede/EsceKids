@@ -21,10 +21,9 @@ public class ProduceActivity extends AppCompatActivity {
 
 
         homeButton5=findViewById(R.id.homeButton5);
-        filterButton5=findViewById(R.id.filterButton5);
-        favoriButton5=findViewById(R.id.favoriButton5);
+
         shopButton5=findViewById(R.id.shopButton5);
-        accountButton8=findViewById(R.id.accountButton8);
+
 
         homeButton5.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,20 +33,7 @@ public class ProduceActivity extends AppCompatActivity {
             }
         });
 
-        filterButton5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent filterButton5=new Intent(ProduceActivity.this,FilterActivity.class);
-                startActivity(filterButton5);
-            }
-        });
-        favoriButton5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent favoriButton5=new Intent(ProduceActivity.this,FavoriteActivity.class);
-                startActivity(favoriButton5);
-            }
-        });
+
         shopButton5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -55,13 +41,7 @@ public class ProduceActivity extends AppCompatActivity {
                 startActivity(shopButton5);
             }
         });
-        accountButton8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent accountButton8=new Intent(ProduceActivity.this,AccountActivity.class);
-                startActivity(accountButton8);
-            }
-        });
+
 
 
     }

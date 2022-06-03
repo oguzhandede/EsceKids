@@ -12,18 +12,18 @@
         android:layout_height="492dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView29"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView38"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
         android:layout_marginTop="16dp"
         android:background="#00000000"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logotext" />
@@ -39,17 +39,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/line" />
 
-    <ImageButton
-        android:id="@+id/accountButton5"
-        android:layout_width="55dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="32dp"
-        android:background="#00000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/btnperson" />
-
     <ImageView
         android:id="@+id/imageView29"
         android:layout_width="0dp"
@@ -62,32 +51,10 @@
         app:srcCompat="@drawable/bottomlogo" />
 
     <ImageButton
-        android:id="@+id/filterButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="8dp"
-        android:background="#00000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/homeButton3"
-        app:srcCompat="@drawable/btnfiltre" />
-
-    <ImageButton
-        android:id="@+id/favoriButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="8dp"
-        android:background="#00000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/shopButton3"
-        app:srcCompat="@drawable/btnfavori" />
-
-    <ImageButton
         android:id="@+id/shopButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="50dp"
         android:layout_marginBottom="8dp"
         android:background="#00000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -98,23 +65,28 @@
         android:id="@+id/homeButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="50dp"
         android:layout_marginBottom="8dp"
         android:background="#00000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/btnhome" />
 
-    <ImageView
-        android:id="@+id/imageView38"
+    <TextView
+        android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginEnd="169dp"
+        android:layout_marginTop="4dp"
+        android:text="MARKA"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/simonetta_italic"
+
+
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView22"
-        app:srcCompat="@drawable/markatxt" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView19" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

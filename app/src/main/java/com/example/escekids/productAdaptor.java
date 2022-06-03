@@ -1,10 +1,12 @@
 package com.example.escekids;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -55,6 +57,7 @@ public class productAdaptor extends RecyclerView.Adapter<productAdaptor.ViewHold
             public void onClick(View view) {
                 sepet.add(products.get(position));
             }
+
         });
 
     }
@@ -67,7 +70,7 @@ public class productAdaptor extends RecyclerView.Adapter<productAdaptor.ViewHold
     public  class ViewHolder  extends RecyclerView.ViewHolder {
         ImageView imgurunfoto;
         TextView txturunad ,txturunfiyat;
-        Button sepet;
+        ImageButton sepet;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             imgurunfoto=itemView.findViewById(R.id.imgurunfoto);

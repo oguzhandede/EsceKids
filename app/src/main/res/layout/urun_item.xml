@@ -7,41 +7,74 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/imgurunfoto"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        app:srcCompat="@drawable/urun1" />
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="117dp"
-        android:layout_weight="1"
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/urunbox"
+            tools:layout_editor_absoluteX="207dp" />
 
-        android:orientation="vertical"
-        android:paddingLeft="15dp"
-        android:paddingTop="15dp">
+        <ImageView
+            android:id="@+id/imgurunfoto"
+            android:layout_width="111dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/urun1" />
 
         <TextView
             android:id="@+id/txturunad"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="113dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/simonetta_italic"
             android:text="TextView"
-            android:textSize="20sp" />
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toTopOf="@+id/txturunfiyat"
+            app:layout_constraintStart_toEndOf="@+id/imgurunfoto"
+            app:layout_constraintTop_toTopOf="@+id/imageView16"
+            app:layout_constraintVertical_bias="0.722" />
 
         <TextView
             android:id="@+id/txturunfiyat"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            android:textSize="20sp" />
+            android:layout_width="113dp"
+            android:textColor="@color/black"
 
-        <Button
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="@font/simonetta_italic"
+            android:text="TextView"
+            android:textSize="30sp"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgurunfoto" />
+
+        <ImageButton
             android:id="@+id/btn_sepeteekle"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
-    </LinearLayout>
+            android:layout_marginEnd="64dp"
+            android:background="#00000000"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView16"
+            app:layout_constraintEnd_toEndOf="@+id/imageView16"
+            app:layout_constraintTop_toTopOf="@+id/imageView16"
+            app:layout_constraintVertical_bias="0.494"
+            app:srcCompat="@drawable/blackshopbutton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

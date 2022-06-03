@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.webkit.URLUtil;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.lang.reflect.Array;
@@ -20,16 +21,16 @@ public class BrandaActivity extends AppCompatActivity {
     ImageButton favoriButton3;
     ImageButton shopButton3;
     ImageButton accountButton5;
+    TextView textView10;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_branda);
 
         homeButton3=findViewById(R.id.homeButton3);
-        filterButton3=findViewById(R.id.filterButton3);
-        favoriButton3=findViewById(R.id.favoriButton3);
+
         shopButton3=findViewById(R.id.shopButton3);
-        accountButton5=findViewById(R.id.accountButton5);
+        textView10=findViewById(R.id.textView10);
 
         homeButton3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,20 +39,8 @@ public class BrandaActivity extends AppCompatActivity {
                 startActivity(homeButton3);
             }
         });
-        filterButton3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent filterButton3=new Intent(BrandaActivity.this,FilterActivity.class);
-                startActivity(filterButton3);
-            }
-        });
-        favoriButton3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent favoriButton3=new Intent(BrandaActivity.this,FavoriteActivity.class);
-                startActivity(favoriButton3);
-            }
-        });
+
+
         shopButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,13 +48,24 @@ public class BrandaActivity extends AppCompatActivity {
                 startActivity(shopButton3);
             }
         });
-        accountButton5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent accountButton5=new Intent(BrandaActivity.this,LoginActivity.class);
-                startActivity(accountButton5);
-            }
-        });
+
+            Intent markakotonal=getIntent();
+            String kotonal=markakotonal.getStringExtra("koton");
+            textView10.setText(kotonal);
+
+            Intent markazaraal=getIntent();
+            String zaraal=markazaraal.getStringExtra("zara");
+            textView10.setText(zaraal);
+
+            Intent markalcwal=getIntent();
+            String lcwal=markalcwal.getStringExtra("lcw");
+            textView10.setText(lcwal);
+
+
+
+
+
+
 
         ArrayList<productinfo> products=new ArrayList<productinfo>();
 
