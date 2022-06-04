@@ -7,12 +7,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.webkit.URLUtil;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class BrandaActivity extends AppCompatActivity {
@@ -27,9 +25,9 @@ public class BrandaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_branda);
 
-        homeButton3=findViewById(R.id.homeButton3);
+        homeButton3=findViewById(R.id.homeButton4);
 
-        shopButton3=findViewById(R.id.shopButton3);
+        shopButton3=findViewById(R.id.shopButton4);
         textView10=findViewById(R.id.textView10);
 
         homeButton3.setOnClickListener(new View.OnClickListener() {
@@ -49,17 +47,8 @@ public class BrandaActivity extends AppCompatActivity {
             }
         });
 
-            Intent markakotonal=getIntent();
-            String kotonal=markakotonal.getStringExtra("koton");
-            textView10.setText(kotonal);
 
-            Intent markazaraal=getIntent();
-            String zaraal=markazaraal.getStringExtra("zara");
-            textView10.setText(zaraal);
 
-            Intent markalcwal=getIntent();
-            String lcwal=markalcwal.getStringExtra("lcw");
-            textView10.setText(lcwal);
 
 
 
@@ -69,10 +58,10 @@ public class BrandaActivity extends AppCompatActivity {
 
         ArrayList<productinfo> products=new ArrayList<productinfo>();
 
-        products.add(new productinfo("urun1",R.drawable.urun1 ,250));
-        products.add(new productinfo("urun2",R.drawable.urun2 ,350));
-        products.add(new productinfo("urun3",R.drawable.urun3 ,150));
-        products.add(new productinfo("urun4",R.drawable.urun4 ,150));
+        products.add(new productinfo("urun1",R.drawable.urun8 ,250));
+        products.add(new productinfo("urun2",R.drawable.urun9 ,350));
+        products.add(new productinfo("urun3",R.drawable.urun10 ,150));
+        products.add(new productinfo("urun4",R.drawable.urun11 ,150));
         RecyclerView list1=findViewById(R.id.list1);
         productAdaptor adaptor=new productAdaptor(products,this);
         list1.setAdapter(adaptor);

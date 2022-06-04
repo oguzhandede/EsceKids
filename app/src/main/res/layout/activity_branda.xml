@@ -51,7 +51,7 @@
         app:srcCompat="@drawable/bottomlogo" />
 
     <ImageButton
-        android:id="@+id/shopButton3"
+        android:id="@+id/shopButton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
@@ -62,7 +62,7 @@
         app:srcCompat="@drawable/btnshop" />
 
     <ImageButton
-        android:id="@+id/homeButton3"
+        android:id="@+id/homeButton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
@@ -77,7 +77,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="MARKA"
+        android:text="LC Waikiki"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"

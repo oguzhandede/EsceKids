@@ -41,11 +41,13 @@ TextView textView7;
         Intent verial=getIntent();
         String alinanisim=verial.getStringExtra("ad1");
         String alinanfiyat=verial.getStringExtra("fiyat1");
+        String alinanfiyat2=verial.getStringExtra("fiyat2");
+
 
         textView7.setText(alinanisim);
         textView8.setText(alinanfiyat);
         textView9.setText(alinanfiyat);
-
+        toplamtutar.setText(alinanfiyat2);
 
 
 
