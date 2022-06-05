@@ -1,6 +1,7 @@
 package com.example.escekids;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -15,6 +16,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ViewFlipper;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -42,6 +44,12 @@ public class HomeActivity extends AppCompatActivity {
     ImageButton imageButton5;
     TextView toplamtutar;
 
+    ViewFlipper viewFlipper;
+
+    CardView cardView1;
+    CardView cardView2;
+    CardView cardView3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,6 +73,14 @@ public class HomeActivity extends AppCompatActivity {
 
         imageButton3=findViewById(R.id.imageButton3);
         textView3=findViewById(R.id.textView3);
+
+        viewFlipper=findViewById(R.id.viewFlipper);
+
+        cardView1=findViewById(R.id.cardView1);
+        cardView2=findViewById(R.id.cardView2);
+        cardView3=findViewById(R.id.cardView3);
+
+        viewFlipper.setAutoStart(true);
 
 
         imageButton5.setOnClickListener(new View.OnClickListener() {

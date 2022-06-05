@@ -26,16 +26,78 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+                <ViewFlipper
+                    android:id="@+id/viewFlipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView0"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
 
-                <ImageView
-                    android:id="@+id/imageView21"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/slaytimg" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/slaytimg" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/slayt1" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/slayt2" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/slayt3" />
+
+
+                    </androidx.cardview.widget.CardView>
+                </ViewFlipper>
 
                 <ImageView
                     android:id="@+id/imageView32"
@@ -107,7 +169,7 @@
                     android:layout_marginStart="32dp"
                     android:background="#00000000"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView21"
+                    app:layout_constraintTop_toBottomOf="@+id/viewFlipper"
                     app:srcCompat="@drawable/kotonimg" />
 
                 <ImageButton
@@ -116,7 +178,7 @@
                     android:layout_height="wrap_content"
                     android:background="#00000000"
                     app:layout_constraintStart_toEndOf="@+id/imageButton"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView21"
+                    app:layout_constraintTop_toBottomOf="@+id/viewFlipper"
                     app:srcCompat="@drawable/lcwimg" />
 
                 <ImageButton
@@ -125,7 +187,7 @@
                     android:layout_height="wrap_content"
                     android:background="#00000000"
                     app:layout_constraintStart_toEndOf="@+id/imageButton3"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView21"
+                    app:layout_constraintTop_toBottomOf="@+id/viewFlipper"
                     app:srcCompat="@drawable/zaraimg" />
 
                 <TextView
