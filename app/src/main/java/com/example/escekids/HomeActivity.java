@@ -176,7 +176,7 @@ public class HomeActivity extends AppCompatActivity {
         homeButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent homeButton2=new Intent(HomeActivity.this,BrandaActivity.class);
+                Intent homeButton2=new Intent(HomeActivity.this,HomeActivity.class);
                 startActivity(homeButton2);
             }
         });
